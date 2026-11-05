@@ -8,7 +8,7 @@ Each rule comes in two episodes: one to meet it, one to challenge it. Every epis
 
 | Tool | Folder | Status |
 | --- | --- | --- |
-| Linter (React and TypeScript) | [`linter/`](linter/) | Available: `eslint-plugin-fn-securecode` |
+| Linter (React and TypeScript) | [`linter/`](linter/) | Planned |
 | Analyzer (C#) | `analyzer/` | Planned |
 | Scanner (finds secrets) | `scanner/` | Planned |
 
