@@ -115,11 +115,11 @@ Just watching the videos? You need nothing.
 
 | Rule | What it does | Docs |
 | --- | --- | --- |
-| `no-hardcoded-api-key` | Finds hardcoded API keys and secrets. Checks the value, not only the name. | [docs](docs/rules/no-hardcoded-api-key.md) |
+| `no-hardcoded-api-key` | Finds hardcoded API keys and secrets. Checks the value, not only the name. | [docs](docs/rules/no-hardcoded-api-key.md), [what it can not catch](docs/rules/no-hardcoded-api-key-limits.md) |
 
 ## Philosophy
 
-Security should be built **from the inside out**, not only with outside layers. A rule in your editor finds the mistake early. It is one layer, not the only one.
+Security should be built **from the inside out**, not only with outside layers. A rule in your editor finds the mistake early. It is one layer, not the only one: see the known limits of each rule in its docs.
 
 ## Episodes
 
@@ -128,7 +128,7 @@ Every rule comes in two episodes on the Flor's Lab channel: one to meet the rule
 | Tag | Episode |
 | --- | --- |
 | `kit-linter-episode1` | Hardcoded API keys: meet the rule |
-| `kit-linter-episode2` | Hardcoded API keys: challenge the rule (coming next) |
+| `kit-linter-episode2` | Hardcoded API keys: challenge the rule |
 
 ## License
 

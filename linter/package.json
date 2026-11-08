@@ -16,7 +16,7 @@
   "devDependencies": { "eslint": "^9.0.0" },
   "scripts": {
     "lint": "node --eval \"console.log('plugin repo: nothing to lint here')\"",
-    "test": "node tests/no-hardcoded-api-key.test.js"
+    "test": "node tests/no-hardcoded-api-key.test.js && node tests/no-hardcoded-api-key.limits.test.js"
   },
   "files": ["src", "docs", "README.md", "LICENSE"]
 }

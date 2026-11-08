@@ -8,6 +8,10 @@ Each rule comes in two episodes: one to meet it, one to challenge it. Every epis
 
 ![Lab Kit architecture: the repo, the linter folder, and how a warning is produced](docs/labkit-architecture.png)
 
+## What you need
+
+Node.js 18+ and VS Code with the ESLint extension. Full steps are in the [linter README](linter/README.md#what-you-need). Just watching? You need nothing.
+
 ## Tools
 
 | Tool | Folder | Status |
@@ -23,7 +27,7 @@ Tags use the pattern `kit-<tool>-episode<N>`.
 | Tag | Episode |
 | --- | --- |
 | `kit-linter-episode1` | Hardcoded API keys: meet the rule |
-| `kit-linter-episode2` | Hardcoded API keys: challenge the rule (coming next) |
+| `kit-linter-episode2` | Hardcoded API keys: challenge the rule |
 
 ## License
 
