@@ -1,0 +1,22 @@
+{
+  "name": "eslint-plugin-lab-kit",
+  "version": "0.2.0",
+  "description": "Security from inside out - ESLint rules that find hardcoded secrets and other security mistakes",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": { ".": "./src/index.js" },
+  "keywords": ["eslint", "eslintplugin", "eslint-plugin", "security", "secrets", "api-key", "react", "typescript"],
+  "author": "Flor Nezhadian",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/fnezhadian/lab-kit.git", "directory": "linter" },
+  "bugs": { "url": "https://github.com/fnezhadian/lab-kit/issues" },
+  "homepage": "https://github.com/fnezhadian/lab-kit/tree/main/linter#readme",
+  "engines": { "node": ">=18" },
+  "peerDependencies": { "eslint": ">=9" },
+  "devDependencies": { "eslint": "^9.0.0" },
+  "scripts": {
+    "lint": "node --eval \"console.log('plugin repo: nothing to lint here')\"",
+    "test": "node tests/no-hardcoded-api-key.test.js"
+  },
+  "files": ["src", "docs", "README.md", "LICENSE"]
+}

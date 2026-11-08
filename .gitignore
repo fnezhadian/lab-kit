@@ -1,0 +1,7 @@
+node_modules/
+.env
+.env.*
+# Ep demo files: the fake keys have real key formats, GitHub push protection may block the push
+scenarios.tsx
+limits.tsx
+lab-kit-demo/
