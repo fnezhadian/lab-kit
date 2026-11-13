@@ -30,6 +30,7 @@ Tags use the pattern `kit-<tool>-episode<N>`.
 | `kit-linter-episode2` | Hardcoded API keys: challenge the rule |
 | `kit-linter-episode3` | Hardcoded passwords: meet the rule |
 | `kit-linter-episode4` | Hardcoded passwords: challenge the rule |
+| `kit-linter-episode5` | Secrets in front-end variables: meet the rule |
 
 ## License
 

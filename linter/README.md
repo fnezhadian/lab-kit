@@ -10,7 +10,7 @@ Part of **Lab Kit** by Flor's Lab: a free box of small security tools. This is t
 npm install --save-dev eslint eslint-plugin-lab-kit
 ```
 
-Requires ESLint 9 or newer (flat config). Each rule works alone: turn on the ones you want. Both rules can warn on the same line, and that is fine.
+Requires ESLint 9 or newer (flat config). Each rule works alone: turn on the ones you want. The API key and password rules can warn on the same line, and that is fine.
 
 The plugin lives in the `linter/` folder of the [Lab Kit repository](https://github.com/fnezhadian/lab-kit).
 
@@ -32,7 +32,8 @@ export default [
     plugins: { "lab-kit": labKit },
     rules: {
       "lab-kit/no-hardcoded-api-key": "warn",
-      "lab-kit/no-hardcoded-password": "warn"
+      "lab-kit/no-hardcoded-password": "warn",
+      "lab-kit/no-secret-in-public-env": "warn"
     }
   }
 ];
@@ -54,7 +55,8 @@ export default [
     plugins: { "lab-kit": labKit },
     rules: {
       "lab-kit/no-hardcoded-api-key": "warn",
-      "lab-kit/no-hardcoded-password": "warn"
+      "lab-kit/no-hardcoded-password": "warn",
+      "lab-kit/no-secret-in-public-env": "warn"
     }
   }
 ];
@@ -110,7 +112,8 @@ Just watching the videos? You need nothing.
 
    You should see one warning from `lab-kit/no-hardcoded-api-key`.
 7. Try the password rule too: add `const dbPassword = "Sup3rS3cret!";` to `demo.tsx` and run the same command. You should see one warning from `lab-kit/no-hardcoded-password`.
-8. Open the folder in VS Code and open `demo.tsx`. The line gets a yellow underline.
+8. Try the front-end rule: add `const s = import.meta.env.VITE_API_SECRET;` to `demo.tsx` and run the same command. You should see one warning from `lab-kit/no-secret-in-public-env`.
+9. Open the folder in VS Code and open `demo.tsx`. The line gets a yellow underline.
 
 **No underline in VS Code?** Press Ctrl+Shift+P and run `ESLint: Restart ESLint Server`. If it still fails, open View > Output, pick **ESLint**, and read the last lines. The most common cause is Node.js missing from your PATH: `node -v` must work in a new terminal.
 
@@ -120,6 +123,7 @@ Just watching the videos? You need nothing.
 | --- | --- | --- |
 | `no-hardcoded-api-key` | Finds hardcoded API keys and secrets. Checks the value, not only the name. | [docs](docs/rules/no-hardcoded-api-key.md), [what it can not catch](docs/rules/no-hardcoded-api-key-limits.md) |
 | `no-hardcoded-password` | Finds hardcoded passwords: a password-like name with a real value, connection strings and URLs with a password. | [docs](docs/rules/no-hardcoded-password.md), [what it can not catch](docs/rules/no-hardcoded-password-limits.md) |
+| `no-secret-in-public-env` | Finds secrets in public front-end variables (`NEXT_PUBLIC_`, `VITE_`, `REACT_APP_` and others) that end up in the browser bundle. | [docs](docs/rules/no-secret-in-public-env.md) |
 
 ## Philosophy
 
@@ -135,6 +139,7 @@ Every rule comes in two episodes on the Flor's Lab channel: one to meet the rule
 | `kit-linter-episode2` | Hardcoded API keys: challenge the rule |
 | `kit-linter-episode3` | Hardcoded passwords: meet the rule |
 | `kit-linter-episode4` | Hardcoded passwords: challenge the rule |
+| `kit-linter-episode5` | Secrets in front-end variables: meet the rule |
 
 ## License
 
