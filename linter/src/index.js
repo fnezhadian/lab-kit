@@ -4,7 +4,7 @@ import noHardcodedPassword from "./rules/no-hardcoded-password.js";
 import noSecretInPublicEnv from "./rules/no-secret-in-public-env.js";
 
 export default {
-  meta: { name: "eslint-plugin-lab-kit", version: "0.4.0" },
+  meta: { name: "eslint-plugin-lab-kit", version: "0.4.1" },
   rules: {
     "no-hardcoded-api-key": noHardcodedApiKey,
     "no-hardcoded-password": noHardcodedPassword,

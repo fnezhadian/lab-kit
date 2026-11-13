@@ -123,7 +123,7 @@ Just watching the videos? You need nothing.
 | --- | --- | --- |
 | `no-hardcoded-api-key` | Finds hardcoded API keys and secrets. Checks the value, not only the name. | [docs](docs/rules/no-hardcoded-api-key.md), [what it can not catch](docs/rules/no-hardcoded-api-key-limits.md) |
 | `no-hardcoded-password` | Finds hardcoded passwords: a password-like name with a real value, connection strings and URLs with a password. | [docs](docs/rules/no-hardcoded-password.md), [what it can not catch](docs/rules/no-hardcoded-password-limits.md) |
-| `no-secret-in-public-env` | Finds secrets in public front-end variables (`NEXT_PUBLIC_`, `VITE_`, `REACT_APP_` and others) that end up in the browser bundle. | [docs](docs/rules/no-secret-in-public-env.md) |
+| `no-secret-in-public-env` | Finds secrets in public front-end variables (`NEXT_PUBLIC_`, `VITE_`, `REACT_APP_` and others) that end up in the browser bundle. | [docs](docs/rules/no-secret-in-public-env.md), [what it can not catch](docs/rules/no-secret-in-public-env-limits.md) |
 
 ## Philosophy
 
@@ -140,6 +140,7 @@ Every rule comes in two episodes on the Flor's Lab channel: one to meet the rule
 | `kit-linter-episode3` | Hardcoded passwords: meet the rule |
 | `kit-linter-episode4` | Hardcoded passwords: challenge the rule |
 | `kit-linter-episode5` | Secrets in front-end variables: meet the rule |
+| `kit-linter-episode6` | Secrets in front-end variables: challenge the rule |
 
 ## License
 

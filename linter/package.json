@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-lab-kit",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Security from inside out - ESLint rules that find hardcoded secrets, API keys, passwords and secrets in public front-end variables",
   "type": "module",
   "main": "src/index.js",
@@ -43,7 +43,7 @@
   },
   "scripts": {
     "lint": "node --eval \"console.log('plugin repo: nothing to lint here')\"",
-    "test": "node tests/no-hardcoded-api-key.test.js && node tests/no-hardcoded-api-key.limits.test.js && node tests/no-hardcoded-password.test.js && node tests/no-hardcoded-password.limits.test.js && node tests/no-secret-in-public-env.test.js"
+    "test": "node tests/no-hardcoded-api-key.test.js && node tests/no-hardcoded-api-key.limits.test.js && node tests/no-hardcoded-password.test.js && node tests/no-hardcoded-password.limits.test.js && node tests/no-secret-in-public-env.test.js && node tests/no-secret-in-public-env.limits.test.js"
   },
   "files": [
     "src",
